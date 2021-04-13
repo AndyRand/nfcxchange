@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+
+        app:headerLayout="@layout/nav_header_main"
+
+        app:menu="@menu/menu"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/logout"
+            android:id="@+id/logout"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"/>
+    </android.support.design.widget.NavigationView>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_search_top"
+            android:layout_marginLeft="@dimen/margin_search"
+            android:layout_marginRight="@dimen/margin_search"
+            android:layout_marginBottom="@dimen/margin_search"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutSearch1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <EditText
+                    android:id="@+id/serviceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mot_cle"
+                    android:maxLines="1"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:id="@+id/switchMotCle"
+                android:text="Recherche dans le titre uniquement"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/search_ensemble">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/value_margin"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        android:layout_marginLeft="10dp">
+                        android:layout_marginRight="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/type_service_text"
+                            android:text="@string/list_type_service"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="left"
+
+                            />
+                    </LinearLayout>
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_type_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/list_type_service"
+                        android:layout_marginBottom="@dimen/value_margin"
+
+                        app:ms_hintColor="@color/colorPrimary"
+                        app:ms_arrowColor="@color/colorPrimary"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/value_margin"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/price_text"
+                            android:text="@string/price"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="left"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/value_margin"
+                        android:orientation="horizontal"
+                        android:weightSum="1.0"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/min_price"
+                            android:text="@string/min_price"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="left"
+                            android:layout_weight=".5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/max_price"
+                            android:text="@string/max_price_currency"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="right"
+                            android:layout_weight=".5"/>
+                    </LinearLayout>
+                    <com.edmodo.rangebar.RangeBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/range_price"
+                        android:layout_marginBottom="@dimen/value_margin"
+                        app:barColor="@color/colorPrimary"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/rechercher"
+            android:id="@+id/rechercher"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"/>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

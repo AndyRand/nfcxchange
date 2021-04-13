@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">NFC X-Change</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="seConnecter">Se connecter</string>
+    <string name="logout">Se deconnecter</string>
+    <string name="seDeconnecter">Se déconnecter</string>
+    <string name="sInscrire">S\'inscrire</string>
+    <string name="patientez">Veuillez Patienter</string>
+    <string name="mailAddress">Adresse email</string>
+    <string name="password">Mot de passe</string>
+    <string name="verificationCon">Connexion non établie! Verifier votre connexion.</string>
+    <string name="estVide">est vide!</string>
+    <string name="en_cours_data">En attente des données...</string>
+
+
+    <!-- Recherche -->
+
+    <string name="rechercher">Rechercher</string>
+    <string name="selectionner">Veuillez Choisir</string>
+    <string name="en_cours">Recherche en cours ...</string>
+    <string name="mot_cle">Mot clé</string>
+    <string name="list_type_service">Type de Service</string>
+    <string name="price">Prix</string>
+    <string name="rangePrice">Prix</string>
+    <string name="min_price">0</string>
+    <string name="max_price">100</string>
+    <string name="price_currency"></string>
+    <string name="max_price_currency">100</string>
+    <string name="not_impl">Recherche non implementée sur cette section</string>
+
+
+    <!-- Navigation et Menu -->
+    <string name="navigation_drawer_open">Ouvrir navigation drawer</string>
+    <string name="navigation_drawer_close">Fermer navigation drawer</string>
+    <string name="list_product">Liste des services</string>
+    <string name="my_shop">Mon panier</string>
+    <string name="my_request">Mes demandes</string>
+    <string name="my_product">Mes services</string>
+    <string name="settings">Parametre</string>
+    <string name="my_tokens">Mes jetons</string>
+    <string name="my_profile">Mon profil</string>
+    <string name="language">Language</string>
+
+    <!-- SplashScreen -->
+    <string name="loading">Bienvenue</string>
+    <string name="version">Version 1.0</string>
+
+    <!-- Service -->
+    <string name="create_title">Créer un nouveau Service</string>
+    <string name="waiting_transaction">Transaction en cours...</string>
+    <string name="service_list_title">Liste des Services</string>
+    <string name="service_detail_title">Les détails du produit</string>
+    <string name="detail">Détails</string>
+    <string name="all">Tout</string>
+    <string name="buy">Buy</string>
+    <string name="similary">Les services similaires</string>
+    <string name="service_updated">Produit ou service mis a jour</string>
+    <string name="new_service">Ajouter un nouveau produit ou service</string>
+    <string name="xchange">X-Change</string>
+    <string name="update_service">Mis a jour de produit</string>
+    <string name="update_service_no_data">Veuillez selectionner un produit a mettre a jour</string>
+    <string name="valider_achat">Veuillez selectionner un produit</string>
+    <string name="success_msg">Produit ajouté avec succès</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel diam a turpis condimentum fringilla. Pellentesque quis consequat mauris. Aenean placerat pellentesque tortor, porttitor rhoncus nibh varius eu. Sed dictum nulla metus,</string>
+    <string name="service_name">Nom du service</string>
+    <string name="date_publication_name">Date de publication</string>
+    <string name="description">Description</string>
+    <string name="update_text">Mettre a jour</string>
+    <string name="upload_file">Choisir image</string>
+
+    <!-- Demande -->
+    <string name="validate_request">Valider les demandes</string>
+    <string name="delete">Supprimer</string>
+    <string name="cancel">Annuler</string>
+    <!-- Shop -->
+    <string name="price_">Prix :</string>
+    <string name="validate">Valider</string>
+    <string name="back">Retour</string>
+    <string name="my_product_title">Tes produits</string>
+    <string name="xchange_process">Proceder a X-Change</string>
+    <string name="buy_process">Proceder a l\'achat</string>
+    <string name="pending">En attente...</string>
+    <string name="go_authentificate">L\'utilisateur ne correspond pas. Veuillez vous reconnecter avec un bon utilisateur</string>
+
+    <!-- Langues -->
+    <string name="langue">Choisir votre langue</string>
+    <string name="francais">Francais</string>
+    <string name="malgache">Malgache</string>
+    <string name="anglais">Anglais</string>
+
+    <!-- NFC -->
+    <string name="get_phone">S\'il vous plait,veuillez rapprocher vos téléphone</string>
+    <string name="payment_process">Procédure de Paiement</string>
+    <string name="transaction_ok">La transaction a été éffectuée avec succès</string>
+
+    <string name="test_img">data:image/jpeg;base64,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</string>
+
+    <!-- Demande -->
+    <string name="buy_title">Liste des achats</string>
+    <string name="Xchange_title">Liste des X-Change</string>
+    <string name="demande">Tes Demandes</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/list_product"
+            android:icon="@drawable/listproduct"
+            android:title="@string/list_product" />
+        <item
+            android:id="@+id/my_shop"
+            android:icon="@drawable/shop"
+            android:title="@string/my_shop" />
+        <item
+            android:id="@+id/my_product"
+            android:icon="@drawable/myproduct"
+            android:title="@string/my_product" />
+        <item
+            android:id="@+id/my_request"
+            android:icon="@drawable/myrequest"
+            android:title="@string/my_request" />
+    </group>
+
+
+    <item android:title="@string/settings"
+        android:id="@+id/settings"
+        >
+        <menu>
+            <item
+                android:id="@+id/my_tokens"
+                android:icon="@drawable/mytokens"
+                android:title="@string/my_tokens" />
+            <item
+                android:id="@+id/my_profile"
+                android:icon="@drawable/myprofile"
+                android:title="@string/my_profile" />
+            <item
+                android:id="@+id/language"
+                android:icon="@drawable/language"
+                android:title="@string/language" />
+        </menu>
+    </item>
+
+
+</menu>
